@@ -14,7 +14,7 @@ $(document).ready(function() {
     for(let i = 0; i < objectsArr.length; i++) {
       let imgUrl = objectsArr[i].node.frontmatter.cover;
       if($imgs[i]) {
-        $imgs[i].src = imgUrl;
+        $($imgs[i]).attr('src', imgUrl);
       }
     }
   }
